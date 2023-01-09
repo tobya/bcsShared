@@ -19,7 +19,7 @@
                 "Tobya\\BCS\\Shared\\Providers\\BCSSharedProvider"
             ]
         }
-    }
+    },
     "require": {
         "spatie/url": "^1.3"
     }
