@@ -13,5 +13,7 @@
             "email": "toby@cookingisfun.ie"
         }
     ],
-    "require": {}
+    "require": {
+        "spatie/url": "^1.3"
+    }
 }
