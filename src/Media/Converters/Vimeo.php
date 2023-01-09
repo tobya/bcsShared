@@ -2,7 +2,7 @@
 
   namespace Tobya\Shared\Media\Converters;
 
-  namespace Spatie\Url;
+use Spatie\Url\Url;
 
   class Vimeo
   {
