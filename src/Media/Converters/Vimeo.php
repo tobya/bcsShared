@@ -6,7 +6,7 @@ use Spatie\Url\Url;
 
   class Vimeo
   {
-    public function RecordingToEmbedLink($RecordingURLLink){
+    public static function  RecordingToEmbedLink($RecordingURLLink){
 
         //https://vimeo.com/446845241/e26670f95a
        // now updated to
@@ -18,8 +18,8 @@ use Spatie\Url\Url;
        $url = Url::fromString($RecordingURLLink);
         $h = $url->getQueryParameter('h');
         if ($h !== null){
-            $this->url = $RecordingURLLink;
-            return $this->url;
+            return $RecordingURLLink;
+
         }
 
         if (is_null($RecordingURLLink)){
@@ -30,8 +30,14 @@ use Spatie\Url\Url;
         $blocks = explode('/',parse_url($RecordingURLLink,PHP_URL_PATH ));
         $videoid = $blocks[1];
         $videohash = $blocks[2];
-        $this->url = "https://player.vimeo.com/video/$videoid?h=$videohash&badge=0&autopause=0&player_id=0&app_id=58479" ;
-        return $this->url;
+        return "https://player.vimeo.com/video/$videoid?h=$videohash&badge=0&autopause=0&player_id=0&app_id=58479" ;
+
 
    }
+
+
+    public static function  RecordingToEmbediFrame($RecordingURLLink){
+        $modifiedurl = Self::RecordingToEmbedLink($RecordingURLLink);
+        return " <iframe src=\"$modifiedurl\"  width=\"100%\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>";
+    }
   }
