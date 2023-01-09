@@ -1,10 +1,10 @@
 {
-    "name": "tobya/shared",
+    "name": "tobya/bcsshared",
     "description": "Shared Functions",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Tobya\\Shared\\": "src/"
+            "Tobya\\BCS\\Shared\\": "src/"
         }
     },
     "authors": [

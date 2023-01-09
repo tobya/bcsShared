@@ -1,6 +1,6 @@
 <?php
 
-  namespace Tobya\Shared\Media\Converters;
+  namespace Tobya\BCS\Shared\Media\Converters;
 
 use Spatie\Url\Url;
 
