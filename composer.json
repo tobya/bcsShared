@@ -1,0 +1,17 @@
+{
+    "name": "tobya/shared",
+    "description": "Shared Functions",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tobya\\Shared\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Toby Allen",
+            "email": "toby@cookingisfun.ie"
+        }
+    ],
+    "require": {}
+}
