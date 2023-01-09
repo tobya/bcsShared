@@ -13,6 +13,13 @@
             "email": "toby@cookingisfun.ie"
         }
     ],
+ "extra": {
+        "laravel":{
+            "providers" : [
+                "Tobya\\BCS\\Shared\\Providers\\BCSSharedProvider"
+            ]
+        }
+    }
     "require": {
         "spatie/url": "^1.3"
     }

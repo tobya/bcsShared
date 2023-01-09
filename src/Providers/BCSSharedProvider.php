@@ -1,6 +1,6 @@
 <?php
 
-namespace Tobya\BCS\Shared;
+namespace Tobya\BCS\Shared\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
