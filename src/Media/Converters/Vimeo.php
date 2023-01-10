@@ -36,7 +36,7 @@ use Spatie\Url\Url;
         } else {  // public video
             // https://vimeo.com/638718929
             $videoid = $blocks[1];
-            return "https://player.vimeo.com/video/$videoid";
+            return "https://player.vimeo.com/video/$videoid&badge=0&autopause=0&player_id=0&app_id=58479";
 
         }
 
