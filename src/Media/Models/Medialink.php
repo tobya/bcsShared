@@ -18,11 +18,19 @@ class Medialink extends Model
      */
     public function getembedhtmlAttribute(){
         try {
-
-        return Vimeo::RecordingToEmbediFrame($this->url);
+          return Vimeo::RecordingToEmbediFrame($this->url);
         } catch (\Exception $e){
             return "Unable to Load Video - $this->>url";
         }
 
+    }
+
+    public function getembedlinkattribute(){
+        try {
+
+        return Vimeo::RecordingToEmbedLink($this->url);
+        } catch (\Exception $e){
+            return "https://ballymaloecookeryschool.ie";
+        }
     }
 }
