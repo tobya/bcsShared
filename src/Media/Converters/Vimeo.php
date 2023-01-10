@@ -28,9 +28,17 @@ use Spatie\Url\Url;
 
         // Normal url can now be written from new url, using 2nd param as hash.
         $blocks = explode('/',parse_url($RecordingURLLink,PHP_URL_PATH ));
-        $videoid = $blocks[1];
-        $videohash = $blocks[2];
-        return "https://player.vimeo.com/video/$videoid?h=$videohash&badge=0&autopause=0&player_id=0&app_id=58479" ;
+        if (isset($blocks[2])){
+            // https://vimeo.com/411510118/cf828bf6d6
+            $videoid = $blocks[1];
+            $videohash = $blocks[2];
+            return "https://player.vimeo.com/video/$videoid?h=$videohash&badge=0&autopause=0&player_id=0&app_id=58479" ;
+        } else {  // public video
+            // https://vimeo.com/638718929
+            $videoid = $blocks[1];
+            return "https://player.vimeo.com/video/$videoid";
+
+        }
 
 
    }
