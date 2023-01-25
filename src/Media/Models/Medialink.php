@@ -20,7 +20,7 @@ class Medialink extends Model
         try {
           return Vimeo::RecordingToEmbediFrame($this->url);
         } catch (\Exception $e){
-            return "Unable to Load Video - $this->>url";
+            return "Unable to Load Video - $this->url";
         }
 
     }
