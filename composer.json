@@ -21,6 +21,6 @@
         }
     },
     "require": {
-        "spatie/url": "^1.3"
+        "spatie/url": "^2.0"
     }
 }
